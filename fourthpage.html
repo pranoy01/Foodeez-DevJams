@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Marmelad&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./Style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Step Progress Bar - Muhammad Kamran</title>
+
+        <style>
+        *
+
+
+    body{
+        background-image: url(./img/img\ 2.jpeg);
+        background-size: cover;
+        background-position: center;
+        font-family: 'Marmelad', sans-serif;
+        color: #01ab97;
+    }
+    
+    .progress{
+        margin: 250px auto;
+    }
+    
+    .progress img{
+        width: 80px;
+        margin-bottom: 20px;
+    }
+    
+    ul{
+        text-align: center;
+    }
+    
+    ul li{
+        display: inline-block;
+        width: 200px;
+        position: relative;
+    }
+    
+    ul li .fa{
+        background: #ccc;
+        width: 16px;
+        height: 16px;
+        color: #01ab97;
+        border-radius: 50%;
+        padding: 4px;
+    }
+    
+    ul li .fa::after{
+        content: '';
+        background: #ccc;
+        height: 5px;
+        width: 205px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 113px;
+        z-index: -1;
+    }
+    
+    ul li:nth-child(3) .fa{
+        background: #148e14;
+        color: #fff;
+    }
+    
+    ul li:nth-child(3) .fa::after{
+        background: #148e14;
+        /* color: #fff; */
+    }
+    
+    ul li:nth-child(1) .fa,
+    ul li:nth-child(2) .fa{
+        background: #60aa97;
+        color: #fff;
+    }
+    
+    ul li:nth-child(1) .fa::after,
+    ul li:nth-child(2) .fa::after{
+        background: #60aa97;
+        /* color: #fff; */
+    }
+    
+    ul li:first-child .fa::after{
+        width: 105px;
+        left: 100px;
+    }
+    
+    ul li:last-child .fa::after{
+        width: 105px;
+    }
+       
+    
+</style>
+    
+
+</head>
+
+<body>
+    
+
+<div class="progress">
+<ul>
+<li>
+<img src="./img/img 6.png"> <br>
+<i class="fa fa-check"></i>
+<p>Select Item</p>
+</li>
+<li>
+<img src="./img/img 1.png"> <br>
+<i class="fa fa-check"></i>
+<p>Add To Cart</p>
+</li>
+<li>
+<img src="./img/img 3.png"> <br>
+<i class="fa fa-refresh"></i>
+<p>Fill Details</p>
+</li>
+<li>
+<img src="./img/img 5.png"> <br>
+<i class="fa fa-times"></i>
+<p>Make Payment</p>
+</li>
+<li>
+<img src="./img/img 3.png"> <br>
+<i class="fa fa-times"></i>
+<p>Download eBook</p>
+</li>
+</ul>
+</div>
+
+
+
+
+
+</body>
+</html>
